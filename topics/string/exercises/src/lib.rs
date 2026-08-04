@@ -1,11 +1,13 @@
 pub fn hello() -> String {
-    todo!();
+    "Hello Rust".to_string()
 }
 
 pub fn greet(name: &str) -> String {
-    todo!();
+    format!("Hello {}", name)
 }
 
 pub fn append(mut s: String) -> String {
-    todo!();
+    // format!("{}!", s) this gives warning because a mutable s is not mutated ever
+    s += "!";
+    s
 }
