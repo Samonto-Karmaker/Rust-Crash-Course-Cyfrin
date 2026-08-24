@@ -1,7 +1,15 @@
 pub fn sum(nums: Vec<i32>) -> i32 {
-    todo!();
+    let mut sum = 0;
+    for n in nums {
+        sum += n;
+    }
+    sum
 }
 
 pub fn fill(i: u32, n: usize) -> Vec<u32> {
-    todo!();
+    let mut vec = Vec::with_capacity(n);
+    for _ in 0..n {
+        vec.push(i);
+    }
+    vec
 }
