@@ -32,7 +32,7 @@ fn main() {
     // println!("{s}");
     println!("{s2}");
 
-    // Ownnership doesn't move for types that implement the Copy trait.
+    // Ownership doesn't move for types that implement the Copy trait.
     // Values are copied, separate owners for i, i1 an i2
     // Owner of i is i
     let i = 1;
